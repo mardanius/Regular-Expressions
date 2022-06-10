@@ -99,7 +99,8 @@ let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/; // Change this line
 let result = petRegex.test(petString);
 
-
+/* NOTE BY mardanius: after testing the test() method I found that if the word is complete but mixed with other characters it will return TRUE.
+for example: xxxxcatxxx. the result will be true because found the word cat inside the others characters. */
 
 
 /*------------------------
